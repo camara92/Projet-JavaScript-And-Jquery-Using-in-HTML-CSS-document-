@@ -65,7 +65,7 @@ header { position: relative; }
 
 .menuWrapper { position: absolute; z-index: 99; top: 5px; left: 0; right: 0; text-align: right; }
 .iconMenuBurger { background-color: #ccc; border-radius: 5px; padding: 5px; display: inline-block; margin-right: 5px; margin-bottom: 5px; }
-.menuWrapper nav { background-color: white; padding: 5px; text-align: left; display: none; }
+.menuWrapper nav { background-color: white; padding: 5px; text-align: left; display: none; text-decoration:none;}
 
 /*** slideshow du haut  ***/
 .slideshow img { height: 500px; width: auto; display: block; }
