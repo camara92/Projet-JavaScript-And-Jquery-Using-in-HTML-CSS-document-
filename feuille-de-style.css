@@ -1,0 +1,126 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* { box-sizing: border-box; }
+
+/*** Mon CSS ****/
+
+/*** gestion des polices ***/
+body, input, select { font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+/***   ***/
+body { font-size: 16px; }
+
+/*** header ***/
+header { position: relative; }
+
+.intro { position: absolute; top: 100px; left: 15px; right: 15px; text-align: center; z-index: 2; color: #fff; }
+.intro h1 { font-size: 2em; margin-bottom: 5px; }
+
+.menuWrapper { position: absolute; z-index: 99; top: 5px; left: 0; right: 0; text-align: right; }
+.iconMenuBurger { background-color: #ccc; border-radius: 5px; padding: 5px; display: inline-block; margin-right: 5px; margin-bottom: 5px; }
+.menuWrapper nav { background-color: white; padding: 5px; text-align: left; display: none; }
+
+/*** slideshow du haut  ***/
+.slideshow img { height: 500px; width: auto; display: block; }
+
+/*** formulaire ***/
+.formWrapper { position: absolute; bottom: 100px; left: 15px; right: 15px; }
+.formWrapper form { max-width: 700px; margin: 0 auto; }
+.champsFormulaire { background-color: rgba(255, 255, 255, 0.7); padding: 7px; }
+
+.champsFormulaire select { width: 100%; margin-bottom: 5px; }
+.champsFormulaire p { position: relative; margin-bottom: 5px; }
+input[type="date"] { width: 100%; padding: 5px 40px 5px 5px; border: 1px solid #ccc; border-radius: 5px; }
+.champsFormulaire p button { position: absolute; z-index: 2; top: 0; right: 0; border: 1px solid #ccc; line-height: 26px; width: 35px; padding: 0; border-radius: 0 5px 5px 0; }
+
+input[type="submit"]{ background-color: rgba(0, 128, 0, 0.7); color: white; width: 100%; border: 0; padding: 7px; cursor: pointer; }
+
+
+/**** main ***/
+main { max-width: 800px; margin: 0 auto; width: 90%; }
+
+.filtresVoitures { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
+
+
+.ligneVoiture { display: flex; align-items: center; }
+.sliderVoitureWrapper { max-width: 50%; }
+.infosVoiture { margin-left: 50px; }
+.slick-arrow { position: absolute; top: 50%; z-index: 3; background-color: transparent; border: 0; }
+.slick-arrow.slick-prev { left: -10px; }
+.slick-arrow.slick-next { right: -10px; }
+
+h4 { font-size: 1.5em; font-weight: bold; margin-bottom: 10px; }
+.btn { background-color: green; color: white; padding: 15px 25px; display: inline-block; text-decoration: none; border-radius: 10px; }
+
+
+
+.infosVoiture p { margin-bottom: 10px; display: none; }
+
+/*** footer ***/
+footer { display: flex; justify-content: space-between; align-items: center; max-width: 500px; margin: 50px auto 0; padding-bottom: 70px; }
+footer img { max-width: 100%; width: 20%; }
+footer .agenceAdresse { width: 70%; }
+
+
+/***  ne s'execute qu'a partir de 700px */
+@media screen and (min-width: 700px) {
+
+    .champsFormulaire { display: flex; justify-content: space-between; align-items: center; }
+    .champsFormulaire select, .champsFormulaire p { width: 30%; }
+    .infosVoiture p { display: block; }
+    .formWrapper { bottom: 20px; }
+}
+
+/* ne s'execute qu'a partir de 1000px */
+@media screen and (min-width: 1000px) {
+
+    .slideshow img { width: 100%; height: auto;  }
+
+}

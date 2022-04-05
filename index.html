@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TP JavaScript</title>
+	<meta charset="UTF-8">
+	<link href="includes/fontawesome/css/all.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link href="feuille-de-style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<header>
+
+		<div class="menuWrapper">
+			<a class="iconMenuBurger"><i class="fas fa-bars"></i></a>
+			<nav>
+				<ul>
+					<li>
+						<a href="">Lien 1</a>
+					</li>
+					<li>
+						<a href="">Lien 2</a>
+					</li>
+					<li>
+						<a href="">Lien 3</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="intro">
+			<h1>Bienvenue à bord</h1>
+			<p>Location de voiture 24h/24h</p>
+		</div>
+
+		<div class="slideshow">
+			<div><img src="images/background.jpg" alt="" width="2560" height="886" /></div>
+			<div><img src="images/background-2.jpg" alt="" width="2560" height="886" /></div>
+			<div><img src="images/background-3.jpg" alt="" width="2560" height="886" /></div>
+		</div>
+
+		<div class="formWrapper">
+			<form>
+				<fieldset class="champsFormulaire">
+					<select name="">
+						<option val="">Selectionner une adresse</option>
+						<option val="">Marseille</option>
+						<option val="">Aix</option>
+						<option val="">Avignon</option>
+					</select>
+
+					<p>
+						<input type="date" placeholder="Date de début" />
+						<button><i class="fas fa-calendar-alt"></i></button>
+					</p>
+
+					<p>
+						<input type="date" placeholder="Date de fin" />
+						<button><i class="fas fa-calendar-alt"></i></button>
+					</p>
+
+				</fieldset>
+
+				<input type="submit" value="Valider ma recherche" />
+
+			</form>
+		</div>
+	</header>
+
+
+	<main>
+		<div class="filtresVoitures">
+			<p><strong>7</strong> résultats</p>
+			<select>
+				<option val="">Prix croissant</option>
+				<option val="">Prix décroissant</option>
+			</select>
+		</div>
+
+
+
+
+		<div class="ligneVoiture">
+			<div class="sliderVoitureWrapper">
+				<div class="sliderVoiture">
+					<div><img src="images/vehicule1.png" alt="" /></div>
+					<div><img src="images/vehicule1-blue.png" alt="" /></div>
+					<div><img src="images/vehicule1-red.png" alt="" /></div>
+				</div>
+			</div>
+
+			<div class="infosVoiture">
+				<h4>Peugeot 208</h4>
+				<p>lorem ipsum</p>
+				<p>999 euros</p>
+				<a href="" class="btn">Réserver</a>
+			</div>
+		</div>
+
+		
+		<div class="ligneVoiture">
+			<div class="sliderVoitureWrapper">
+				<div class="sliderVoiture">
+					<div><img src="images/vehicule2.png" alt="" /></div>
+					<div><img src="images/vehicule2-red.png" alt="" /></div>
+				</div>
+			</div>
+
+			<div class="infosVoiture">
+				<h4>Fiat 208</h4>
+				<p>lorem ipsum</p>
+				<p>999 euros</p>
+				<a href="" class="btn">Réserver</a>
+			</div>
+		</div>
+
+		<div class="ligneVoiture">
+			<div class="sliderVoitureWrapper">
+				<div class="sliderVoiture">
+					<div><img src="images/vehicule3.png" alt="" /></div>
+					<div><img src="images/vehicule3-red.png" alt="" /></div>
+				</div>
+			</div>
+
+			<div class="infosVoiture">
+				<h4>Audi 208</h4>
+				<p>lorem ipsum</p>
+				<p>999 euros</p>
+				<a href="" class="btn">Réserver</a>
+			</div>
+		</div>
+
+		<div class="ligneVoiture">
+			<div class="sliderVoitureWrapper">
+				<div class="sliderVoiture">
+					<div><img src="images/vehicule4.png" alt="" /></div>
+					<div><img src="images/vehicule4-red.png" alt="" /></div>
+					<div><img src="images/vehicule4-blue.png" alt="" /></div>
+				</div>
+			</div>
+
+			<div class="infosVoiture">
+				<h4>Renault 208</h4>
+				<p>lorem ipsum</p>
+				<p>999 euros</p>
+				<a href="" class="btn">Réserver</a>
+			</div>
+		</div>
+
+
+		<footer>
+			<img src="images/agence.jpg" alt="" />
+			<div class="agenceAdresse">
+				<p>25 bv de mes pieds<br/>
+				13001 Marseille</p>
+			</div>
+		</footer>
+
+
+	</main>
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="mon-programme.js" type="text/javascript"></script>
+</body>
+</html>
